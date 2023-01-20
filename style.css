@@ -26,13 +26,13 @@ header {
 
 .search-bar {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
     margin-left: 20px;
 }
 
 input {
     width: 180px;
+    margin-right: 5px;
 }
 
 .welcome-message {
@@ -49,6 +49,7 @@ a, .welcome-message>p {
 
 .menu, .actions {
     list-style: none;
+    display: none;
     padding-left: 15px;
 }
 
@@ -66,7 +67,7 @@ a, .welcome-message>p {
     display: flex;
     justify-content: center;
     width: 40px;
-    margin: 30px 0 20px;
+    margin: 15px 0 20px;
     padding: 10px;
     border-radius:5px;
 }
@@ -79,6 +80,7 @@ a, .welcome-message>p {
 .banner {
     display: block;
     width: 100vw;
+    margin-top: 15px;
 }
 
 /* MAIN */
@@ -202,10 +204,19 @@ h3 {
 }
 
 @media (min-width: 360px) {
+    .menu, .actions {
+        display: block;
+    }
+    
+    .burger-section {
+        display: none;
+    }
+
     .description{
         display: block;
     }
     .product-card {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
 }
