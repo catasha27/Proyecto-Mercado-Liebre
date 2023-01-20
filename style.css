@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color:#EAC926;
+}
+
+.logo {
+    width: 150px;
+    margin: 30px 0 20px 30px;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+input {
+    width: 180px;
+}
+
+.welcome-message {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+a, .welcome-message>p {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    margin-bottom: 20px;
+}
+
+.burger-section {
+    display: flex;
+    justify-content: center;
+}
+
+.burger-menu {
+    background-color: #1259c3; 
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    margin: 30px 0 20px;
+    padding: 10px;
+    border-radius:5px;
+}
+
+.burger-icon {
+    color: white;
+    font-size: 20px;
+}
+
+/* MAIN */
+
+main {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    width: 100vw;
+}
+
+.last-visit, .sales {
+    background-color: #ebebeb;
+}
+
+h1 {
+    font-size: 24px;
+    color:  #666;
+    margin: 30px 0;
+    padding-left: 15px;
+}
+
+.last-visit-cards, .sales-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card {
+    background-color: white;
+    /* width: 90%; */
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card>img {
+    width: 250px;
+}
+
+.text-card {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    border-top: #ebebeb 1px solid;
+}
+
+.price {
+    font-size: 18px;
+    color: #666;
+}
+
+.discount {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+}
+
+.truck-container {
+    display: block;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border: solid 1px #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top:-18px;
+}
+
+.truck {
+    color: #39b54a;
+    font-size: 16px;    
+}
+
+/* FOOTER */
+
+.footer-wrapper {
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.payment-method, .delivery, .security {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.imp-text {
+    font-size: 12px;
+    color:#666;
+} 
+ 
+h3 {
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-icon {
+    color:#1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;    
+}
+
+#copyright {
+    margin: 15px 0;
+}
