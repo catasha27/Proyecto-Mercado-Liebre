@@ -11,50 +11,69 @@ body {
     background-color: #ebebeb;
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
 
 /* HEADER */
 
 header {
     background-color:#EAC926;
+    font-size: 10px;
+}
+
+.top-container2 {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     width: 150px;
     margin: 30px 0 20px 30px;
+    flex: 1;
 }
 
 .search-bar {
     display: flex;
     align-items: flex-start;
-    margin-left: 20px;
+    flex: 1;
+    margin: 0 15px;
+    height: 20px;
 }
 
 input {
-    width: 180px;
+    width: 100%;
     margin-right: 5px;
 }
 
 .welcome-message {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 15px 0;
+    flex: 1;
 }
 
 a, .welcome-message>p {
-    font-size: 12px;
+    font-size: 1.2em;
     text-decoration: none;
     color: black;
 }
 
-.menu, .actions {
-    list-style: none;
+.site-login-menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     display: none;
-    padding-left: 15px;
+    padding: 0 20px;
 }
 
-.menu {
-    margin-bottom: 20px;
+.menu, .actions {
+    display: flex;
+    flex-direction: row; 
+    list-style: none;
+}
+
+li:not(:first-child){
+    margin-left: 7px;
 }
 
 .burger-section {
@@ -86,6 +105,7 @@ a, .welcome-message>p {
 /* MAIN */
 
 main {
+    font-size: 10px;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -97,7 +117,7 @@ main {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 2.4em;
     color:  #666;
     margin: 30px 0;
     padding-left: 15px;
@@ -118,7 +138,7 @@ h1 {
 }
 
 .product-card>img {
-    width: 250px;
+    width: 100%;
 }
 
 .text-card {
@@ -137,19 +157,20 @@ h1 {
 }
 
 .price {
-    font-size: 18px;
+    font-size: 1.8em;
     color: #666;
     flex: 1;
 }
 
 .discount {
-    font-size: 16px;
+    font-size: 1.6em;
+    text-align: center;
     color: #39b54a;
     flex: 2.3;
 }
 
 .description {
-    font-size: 16px;
+    font-size: 1.6em;
     color: #666;
     display: none;
 }
@@ -169,7 +190,7 @@ h1 {
 
 .truck {
     color: #39b54a;
-    font-size: 16px;    
+    font-size: 1.6em;    
 }
 
 /* FOOTER */
@@ -209,11 +230,28 @@ h3 {
     margin: 15px 0;
 }
 
-@media (min-width: 360px) {
-    .menu, .actions {
-        display: block;
+/* BREAKPOINTS */
+
+/* TABLET */
+
+@media (min-width: 361px) {
+    .top-container1 {
+        display: flex;
+        align-items: center;
     }
     
+    .top-container2 {
+        flex: 2;
+    }
+
+    .site-login-menus {
+        display: flex;
+    }
+
+    a, .welcome-message>p {
+        font-size: 0.9em;
+    }   
+
     .burger-section {
         display: none;
     }
@@ -226,12 +264,23 @@ h3 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    
+        justify-content: space-between;
     }
 
     .product-card {
+        width: 48%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
 
-@media ()
+/* DESKTOP */
+
+@media (min-width: 770px) {
+    a, .welcome-message {
+        font-size: 1.3em;
+    }   
+
+    .product-card {
+        width: 23%;
+    }   
+}
