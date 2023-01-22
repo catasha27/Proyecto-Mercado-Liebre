@@ -13,7 +13,7 @@ header {
     display: flex;
     flex-direction: column;
     align-self: center;
-    width: 50%;
+    width: 100%;
     margin: 2.5em 0;
     font-size: 1.4em;
 }
@@ -63,10 +63,8 @@ fieldset[name="categories"]{
     height: 2em;
 }
 
-/* hice de todo para que el input Vida sana quedara bien pero no 
-tengo idea del porqué se ve diferente al resto*/
-
 .profile-container input, .option input {
+    width: 2em;
     height: 1.3em;
     margin-right: 0.5em;
 }
@@ -123,4 +121,15 @@ tengo idea del porqué se ve diferente al resto*/
     padding: 0;
     background-color: #1259c3;
     color: white;
+}
+
+
+/* ############################### */
+    /* BREAKPOINT DESKTOP */
+/* ############################### */
+
+@media (min-width: 770px) {
+    .register-form {
+        width: 50%;
+    }
 }
