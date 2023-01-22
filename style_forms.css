@@ -1,0 +1,126 @@
+/* HEADER */
+
+header {
+    padding-bottom: 15px;
+}
+
+/* ######################################### */
+    /* ESTILOS PARA FORMULARIO DE REGISTRO */
+/* ######################################### */
+
+
+.register-form  {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 50%;
+    margin: 2.5em 0;
+    font-size: 1.4em;
+}
+
+.register-form fieldset {
+    border: solid #EAC926 0.2em;
+    padding: 0 1em; 
+}
+
+.register-form fieldset [name="address-data"], .register-form fieldset[name="categories"] {
+    margin-bottom: 0.9em;
+    padding-bottom: 0.9em;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.buyer, .seller {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+fieldset[name="categories"]{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.register-form legend {
+    font-size: 1.2em;
+    padding: 0.9em 0.3em;
+}
+
+.register-form input {
+    border: none;
+    margin: 0.5em 0;
+    height: 2em;
+}
+
+/* hice de todo para que el input Vida sana quedara bien pero no 
+tengo idea del porqué se ve diferente al resto*/
+
+.profile-container input, .option input {
+    height: 1.3em;
+    margin-right: 0.5em;
+}
+
+::-webkit-file-upload-button {
+    border: none;
+    border-radius: 0.3em;
+    background-color: #1259c3;
+    color: white;
+    height: 2em;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 0;
+}
+
+.button-container button {
+    border: none;
+    border-radius: 0.3em;
+    background-color: #1259c3;
+    color: white;
+    height: 3em;
+    margin: 0.8em 0;
+}
+
+.button-container button[type="reset"] {
+    opacity: 60%;
+} 
+
+
+/* ######################################## */
+    /* ESTILOS PARA FORMULARIO DE INGRESO */
+/* ######################################## */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 80%;
+    height: 25em;
+}
+
+.login-form input, .login-form button {
+    border: none;
+    border-radius: 0.3em;
+    height: 3em;
+    padding-left: 1em;
+    margin: 1.5em 0;
+}
+
+.login-form button {
+    padding: 0;
+    background-color: #1259c3;
+    color: white;
+}
