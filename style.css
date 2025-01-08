@@ -195,7 +195,7 @@ h1 {
 
 /* FOOTER */
 
-.footer-wrapper {
+.footer-wrapper #copyright {
     padding: 10px;
     margin-top: 15px;
     background-color: #ffffff;
@@ -282,5 +282,12 @@ h3 {
 
     .product-card {
         width: 23%;
-    }   
+    } 
+    
+    .footer-wrapper {
+        display: flex;
+        flex-direction: row;       
+    }
+
+
 }
